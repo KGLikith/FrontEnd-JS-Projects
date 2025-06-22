@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-black text-white">
+    <div class="flex container justify-center mx-auto w-4/5">
+      <div
+        class="first w-0 sm:w-[25%] md:w-[50%] text-white space-y-4 font-normal invisible sm:visible"
+      >
+        <div class="logo invert mt-3 ml-4">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="w-7 text-white hover:bg-gray-900 hover:rounded-3xl"
+          >
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="sidebar">
+          <ul class="flex flex-col justify-center text-2xl">
+            <li
+              class="flex items-center w-fit gap-4 py-2 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined w-"> home</span
+              ><span class="hidden md:block">Home</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> search</span
+              ><span class="hidden md:block">Search</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> notifications</span
+              ><span class="hidden md:block">Notifications</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> mail</span
+              ><span class="hidden md:block">Message</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> mail</span
+              ><span class="hidden md:block">Message</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> group</span
+              ><span class="hidden md:block">Communicate</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> person</span
+              ><span class="hidden md:block">Profile</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> mail</span
+              ><span class="hidden md:block">Message</span>
+            </li>
+            <li
+              class="flex items-center w-fit gap-4 py-3 px-2 hover:bg-gray-900 hover:rounded-3xl pr-7"
+            >
+              <span class="material-symbols-outlined"> more</span
+              ><span class="hidden md:block">More</span>
+            </li>
+            <li>
+              <p
+                class="border hidden bg-blue-700 w-[80%] text-white rounded-full md:flex justify-center items-center py-2 border-none mt-3"
+              >
+                <span class="hidden md:block">Post</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="second w-[200%] lg:w-[110%] border-[1px] border-x-gray-700 border-y-black relative "
+      >
+        <div
+          class="head w-[100%] flex items-center border-b-2 z-10 relative border-gray-700"
+        >
+          <div
+            class="absolute w-[60px] h-1 bg-blue-600 bottom-0 left-[20%]"
+          ></div>
+          <div class="leff w-1/2 hover:bg-[#202327]">
+            <div class="left m-3 flex justify-center font-bold">For you</div>
+          </div>
+          <div class="righ w-1/2 hover:bg-[#202327]">
+            <div class="right m-3 flex justify-center">Following</div>
+          </div>
+        </div>
+        <div class="whatshappening p-5 py-2 border-b-2 border-gray-700">
+          <div class="post flex gap-2 items-center mb-5">
+            <div
+              class="dp border w-[38px] h-[38px] rounded-[50%] border-blue-600 bg-blue-600"
+            ></div>
+            <!-- <div class="font-normal text-xl text-gray-400"></div> -->
+            <input
+              type="text"
+              placeholder="What is happening"
+              class="font-normal text-xl bg-inherit outline-none overflow- border-none w-[90%] text-gray-400 h-7 m-5"
+            />
+          </div>
+          <div
+            class="tools flex justify-between items-center gap-2 ml-7 text-blue-500"
+          >
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined"> image </span>
+              <span class="material-symbols-outlined"> gif_box </span>
+              <span class="material-symbols-outlined"> gif_box </span>
+              <span class="material-symbols-outlined"> gif_box </span>
+              <span class="material-symbols-outlined"> gif_box </span>
+            </div>
+            <div
+              class="pos border border-none bg-blue-500 text-white p-2 px-4 rounded-full"
+            >
+              Post
+            </div>
+          </div>
+        </div>
+        <div
+          class="showresults text-blue-400 flex justify-center border-b-2 py-3 border-gray-700"
+        >
+          Show 1400 results
+        </div>
+        <div class="posts p-4 space-y-2">
+          <div class="post flex gap-2 border-b-2 border-gray-700 mb-2">
+            <div class="image">
+              <img
+                src="https://pbs.twimg.com/profile_images/1780562642974785536/mtSfJKDq_bigger.jpg"
+                alt=""
+                class="w-10 rounded-full"
+              />
+            </div>
+            <div class="content">
+              <div class="name flex gap-1 items-center">
+                <div>Ruben hazard</div>
+                <div class="font-thin text-gray-400">@RubenHazard</div>
+                <div class="font-thin text-gray-400">18h</div>
+              </div>
+              <div class="writing">
+                <div>BREAKING: claude 3.5 is live since 1h.</div>
+                <br />
+                <div>They claim to be better than gpt-4o.</div>
+                <br />
+                <div>So I ran my own little test:</div>
+                <br />
+                <div>test #1 → copy the UI of a website</div>
+                <br />
+              </div>
+              <div class="video">
+                <video
+                  width="500"
+                  height="400"
+                  controls
+                  autoplay
+                  class="border rounded-xl"
+                >
+                  <source
+                    src="https://x.com/i/status/1803818660663865505"
+                    type="video/mp4"
+                  />
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  <!-- Your browser does not support the video tag. -->
+                </video>
+              </div>
+              <div class="icons flex justify-between mt-3 text-gray-600">
+                <span class="material-symbols-outlined"> chat </span>
+                <span class="material-symbols-outlined"> favorite </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <div>
+                  <span class="material-symbols-outlined"> bookmark </span>
+                  <span class="material-symbols-outlined"> upload </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post flex gap-2 border-b-2 border-gray-700 mb-2">
+            <div class="image">
+              <img
+                src="https://pbs.twimg.com/profile_images/1780562642974785536/mtSfJKDq_bigger.jpg"
+                alt=""
+                class="w-10 rounded-full"
+              />
+            </div>
+            <div class="content">
+              <div class="name flex gap-1 items-center">
+                <div>Ruben hazard</div>
+                <div class="font-thin text-gray-400">@RubenHazard</div>
+                <div class="font-thin text-gray-400">18h</div>
+              </div>
+              <div class="writing">
+                <div>BREAKING: claude 3.5 is live since 1h.</div>
+                <br />
+                <div>They claim to be better than gpt-4o.</div>
+                <br />
+                <div>So I ran my own little test:</div>
+                <br />
+                <div>test #1 → copy the UI of a website</div>
+                <br />
+              </div>
+              <div class="video">
+                <video
+                  width="500"
+                  height="400"
+                  controls
+                  autoplay
+                  class="border rounded-xl"
+                >
+                  <source
+                    src="https://x.com/i/status/1803818660663865505"
+                    type="video/mp4"
+                  />
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  <!-- Your browser does not support the video tag. -->
+                </video>
+              </div>
+              <div class="icons flex justify-between mt-3">
+                <span class="material-symbols-outlined"> chat </span>
+                <span class="material-symbols-outlined"> favorite </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <div>
+                  <span class="material-symbols-outlined"> bookmark </span>
+                  <span class="material-symbols-outlined"> upload </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post flex gap-2 border-b-2 border-gray-700 mb-2">
+            <div class="image">
+              <img
+                src="https://pbs.twimg.com/profile_images/1780562642974785536/mtSfJKDq_bigger.jpg"
+                alt=""
+                class="w-10 rounded-full"
+              />
+            </div>
+            <div class="content">
+              <div class="name flex gap-1 items-center">
+                <div>Ruben hazard</div>
+                <div class="font-thin text-gray-400">@RubenHazard</div>
+                <div class="font-thin text-gray-400">18h</div>
+              </div>
+              <div class="writing">
+                <div>BREAKING: claude 3.5 is live since 1h.</div>
+                <br />
+                <div>They claim to be better than gpt-4o.</div>
+                <br />
+                <div>So I ran my own little test:</div>
+                <br />
+                <div>test #1 → copy the UI of a website</div>
+                <br />
+              </div>
+              <div class="video">
+                <video
+                  width="500"
+                  height="400"
+                  controls
+                  autoplay
+                  class="border rounded-xl"
+                >
+                  <source
+                    src="https://x.com/i/status/1803818660663865505"
+                    type="video/mp4"
+                  />
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  <!-- Your browser does not support the video tag. -->
+                </video>
+              </div>
+              <div class="icons flex justify-between mt-3">
+                <span class="material-symbols-outlined"> chat </span>
+                <span class="material-symbols-outlined"> favorite </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <div>
+                  <span class="material-symbols-outlined"> bookmark </span>
+                  <span class="material-symbols-outlined"> upload </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post flex gap-2 border-b-2 border-gray-700 mb-2">
+            <div class="image">
+              <img
+                src="https://pbs.twimg.com/profile_images/1780562642974785536/mtSfJKDq_bigger.jpg"
+                alt=""
+                class="w-10 rounded-full"
+              />
+            </div>
+            <div class="content">
+              <div class="name flex gap-1 items-center">
+                <div>Ruben hazard</div>
+                <div class="font-thin text-gray-400">@RubenHazard</div>
+                <div class="font-thin text-gray-400">18h</div>
+              </div>
+              <div class="writing">
+                <div>BREAKING: claude 3.5 is live since 1h.</div>
+                <br />
+                <div>They claim to be better than gpt-4o.</div>
+                <br />
+                <div>So I ran my own little test:</div>
+                <br />
+                <div>test #1 → copy the UI of a website</div>
+                <br />
+              </div>
+              <div class="video">
+                <video
+                  width="500"
+                  height="400"
+                  controls
+                  autoplay
+                  class="border rounded-xl"
+                >
+                  <source
+                    src="https://x.com/i/status/1803818660663865505"
+                    type="video/mp4"
+                  />
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  <!-- Your browser does not support the video tag. -->
+                </video>
+              </div>
+              <div class="icons flex justify-between mt-3">
+                <span class="material-symbols-outlined"> chat </span>
+                <span class="material-symbols-outlined"> favorite </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <span class="material-symbols-outlined"> monitoring </span>
+                <div>
+                  <span class="material-symbols-outlined"> bookmark </span>
+                  <span class="material-symbols-outlined"> upload </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="third mx-4 my-1 ml-10 mr-2 space-y-7 font-sans invisible lg:visible w-0 lg:w-[65%]"
+      >
+        <div class="search fixed">
+          <input
+            type="text"
+            class="rounded-full w-[400px] bg-[#202327] text-gray-500 p-3 pl-6"
+            style="max-width: 22vw"
+            placeholder="Search"
+          />
+        </div>
+        <div
+          class="whats border border-gray-700 rounded-3xl py-4 px-0"
+          style="margin-top: 4rem"
+        >
+          <h1 class="text-2xl font-bold mb-4 pl-4">What's happening</h1>
+          <div class="items">
+            <div class="trending hover:bg-gray-950 pr-2 pl-4 py-2">
+              <div class="font-thin text-gray-400">Trending in India</div>
+              <div class="font-bold">Jadega</div>
+              <div class="font-thin text-gray-400">10.4k posts</div>
+            </div>
+            <div class="trending hover:bg-gray-950 pr-2 pl-4 py-2">
+              <div class="font-thin text-gray-400">Trending in India</div>
+              <div class="font-bold">Jadega</div>
+              <div class="font-thin text-gray-400">10.4k posts</div>
+            </div>
+            <div class="trending hover:bg-gray-950 pr-2 pl-4 py-2">
+              <div class="font-thin text-gray-400">Trending in India</div>
+              <div class="font-bold">Jadega</div>
+              <div class="font-thin text-gray-400">10.4k posts</div>
+            </div>
+            <div class="trending hover:bg-gray-950 pr-2 pl-4 py-2">
+              <div class="font-thin text-gray-400">Trending in India</div>
+              <div class="font-bold">Jadega</div>
+              <div class="font-thin text-gray-400">10.4k posts</div>
+            </div>
+            <div class="trending hover:bg-gray-950 pr-2 pl-4 py-2">
+              <div class="font-thin text-gray-400">Trending in India</div>
+              <div class="font-bold">Jadega</div>
+              <div class="font-thin text-gray-400">10.4k posts</div>
+            </div>
+          </div>
+        </div>
+        <div class="whos border border-gray-700 rounded-3xl py-4 px-0">
+          <h1 class="text-2xl font-bold mb-4 pl-4">Who to follow</h1>
+          <div class="items">
+            <div class="gary pr-2 pl-4 py-2 flex justify-between items-center">
+              <div class="name">
+                <div class="font-bold hover:underline">Gary Marcus</div>
+                <div class="text-gray-400 font-thin">@GaryMarcus</div>
+              </div>
+              <div
+                class="follow border px-3 py-1 rounded-full text-black bg-white"
+              >
+                follow
+              </div>
+            </div>
+            <div class="gary pr-2 pl-4 py-2 flex justify-between items-center">
+              <div class="name">
+                <div class="font-bold hover:underline">Gary Marcus</div>
+                <div class="text-gray-400 font-thin">@GaryMarcus</div>
+              </div>
+              <div
+                class="follow border px-3 py-1 rounded-full text-black bg-white"
+              >
+                follow
+              </div>
+            </div>
+            <div class="gary pr-2 pl-4 py-2 flex justify-between items-center">
+              <div class="name">
+                <div class="font-bold hover:underline">Gary Marcus</div>
+                <div class="text-gray-400 font-thin">@GaryMarcus</div>
+              </div>
+              <div
+                class="follow border px-3 py-1 rounded-full text-black bg-white"
+              >
+                follow
+              </div>
+            </div>
+            <div class="show text-blue-400 pr-2 pl-4 py-2 hover:underline">
+              Show more
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

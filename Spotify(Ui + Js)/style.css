@@ -1,0 +1,561 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --a: 0;
+}
+body{
+    overflow: hidden;
+    background-color: black;
+    color: wheat;
+}
+.left{
+    height: 100vh;
+    min-height: 100svh;
+    /* position: fixed;
+    top: 0;
+    bottom: 0; */
+    width: 24vw;
+    padding: 5px;
+    padding-right: 0;
+}
+.right{
+    position: relative;
+    /* left: 22vw; */
+    padding: 5px 3px;
+    padding-left: 0;
+    width: 76vw;
+    height: 90vh;
+    min-height: 90svh;
+    background-color: black;
+    
+}
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home{
+    padding: 10px 10px 5px 19px;
+}
+
+.home>ul li{
+    display: flex;
+    width: 25px;
+    list-style: none;
+    align-items: center;
+    gap: 22px;
+    margin: 19px 0;
+}
+.library{
+    min-height: 40vh;
+
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 30px 5px 11px;
+    min-height: 12px;
+    margin-bottom: 0px;
+}
+
+.lib{
+    margin: 19px 10px;
+    gap: 13px;
+    width: 148px;
+    display: flex;
+    height: 25px;
+    align-items: center;
+}
+.head img{
+    width: 16px;
+    height: 26px;
+    margin-top: 18px;
+}
+.lib>img{
+    width: 25px;
+    height: 25px;
+    margin-top: 0;
+}
+
+.footer {
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    gap: 23px;
+    margin-top: 0px;
+    padding: 41px 79px 31px 25px; 
+    flex-wrap: wrap;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+.header {
+    z-index: 1;
+    top: 3px;
+    position: fixed;
+    width: 73vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+    padding: 0 20px;
+}
+.nav{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: none;   
+    
+}
+button{
+font-weight: 600;
+font-size: 16px;
+
+}
+.login {
+    background-color: white;
+    color: rgb(30, 20, 20);
+    padding: 14px 29px;
+    border-radius: 25px;
+    margin: 9px 17px;
+    /* display: inline-block; */
+}
+
+.signup {
+    position: relative;
+    /* margin: 9px 16px; */
+    background: transparent;
+    width: 100px;
+    border: none;
+    /* display: inline-block; */
+    color: rgb(158, 154, 154);
+}
+
+.signup:hover {
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.login:hover {
+    color: black;
+    font-weight: 800;
+    /* font-size: 17px; */
+    /* Keep the padding, border-radius, and margin the same */
+    padding: 14px 28px; 
+    border-radius: 32px;
+    margin: 9px 15px;
+}
+.content{
+    position: absolute;
+    background-color: #1d1d1d;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 73vw;
+    padding-top: 100px;
+    max-height: 90vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.content::-webkit-scrollbar {
+    z-index: 10;
+    width: 16px;
+}
+.content::-webkit-scrollbar-track {
+    background: #333; 
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 3px solid #333;
+}
+.content::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+}
+.content::-webkit-scrollbar-button {
+    display: none;
+}
+.headofart > h2{
+    font-size: 22px ;
+    font-weight: 700;
+}
+.headofart > h2:hover{
+    text-decoration: underline;
+}
+.cardContent{
+    padding: 18px 0;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 280px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.card>img{
+    border-radius: 50%;
+    width: 201px;
+    height: 201px;
+    object-position: center center;
+}
+.headofart{
+    justify-content: space-between;
+}
+.card{
+    padding: 0 5px;
+    transition: all 0.5s;
+    position: relative;
+}
+.cardalb{
+    /* padding: 0 10px; */
+    position: relative;
+    transition: all 0.5s;
+}
+.card>h2{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.card > h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #adbcae;
+}
+.cardalb > img{
+    
+    height: 201px;
+    width: 201px;
+    border-radius: 4px;
+    object-position: center center;
+}
+.cardalb > h2{
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.cardalb> p{
+    color: #bcadad;
+    font-size: 14px;
+    font-weight: 400;
+}
+.play{
+    position: absolute;
+    bottom: 48px;
+    right: 6px;
+    transition: all 0.5s ease-out;
+    opacity:var(--a);
+}
+.card:hover{
+    background-color: rgb(35, 33, 33);
+    cursor: pointer;
+    --a:1;
+}
+.cardalb:hover{
+    background-color: rgb(35, 33, 33);
+    cursor: pointer;
+    --a:1;
+}
+.playbar{
+    border-radius: 10px;
+    height: 45px;
+    position: fixed;
+    bottom: 3px;
+    width: 74%;
+    filter: invert(1);
+    background-color: rgb(192, 192, 192);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.songbuttons img{
+    cursor: pointer;
+}
+.librarysongs{
+    padding: 15px 16px;
+    width: 86%;
+    /* height: 100%; */
+    margin: auto;
+    background-color: #1d1d1d;
+    overflow: scroll;
+    height: 200px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.librarysongs::-webkit-scrollbar {
+    width: 16px;
+}
+
+.librarysongs::-webkit-scrollbar-track {
+    background: #333; 
+    border-radius: 10px;
+}
+
+.librarysongs::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 3px solid #333;
+}
+
+.librarysongs::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+}
+.librarysongs::-webkit-scrollbar-button {
+    display: none;
+}
+
+.librarysongs li{
+    list-style-type: decimal;
+    display: flex; 
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 0;
+}
+.info{
+    font-size: 13px;
+}
+.playnow{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* width: 200px; */
+}
+.firstpart{
+    display: flex;
+    gap: 25px;
+}
+.info:hover{
+    font-weight: 700;
+}
+.playnow:hover{
+    font-weight: 700;
+}
+.seekbar{
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    height: 2px;
+    width: 98%;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: black;
+    cursor: pointer;
+}
+.circle{
+    position: absolute;
+    bottom: -4px;
+    left: 0%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    transition: left 0.2s ease;
+}
+.songinfo{
+    text-align: left;
+    width: 150px;
+}
+.songtime{
+    text-align: right;
+    width: 150px;
+}
+.songbuttons{
+    text-align: center;
+    width: 200px;
+}
+.close{
+display: none;
+}
+.timeandvol{
+    gap: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songvolume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+}
+.songvolume>img{
+    margin-right: 5px;
+}
+.songvolume:hover::after{
+    content: "";
+}
+input[type="range"] {
+    /* -webkit-appearance: none; */
+    width: 90px;
+    height: 5px;
+    background: black;
+    border-radius: 2px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+    background: white;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1400px){
+    .innercontent{
+        overflow: scroll;
+        scroll-behavior: smooth;
+        overflow-y: hidden;
+    }
+    .innercontent::-webkit-scrollbar {
+        z-index: -10;
+        width: 2px;
+    }
+    
+    .innercontent::-webkit-scrollbar-track {
+        background: #333; 
+        border-radius: 10px;
+    }
+    
+    .innercontent::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 10px;
+        border: 3px solid #333;
+    }
+    
+    .innercontent::-webkit-scrollbar-thumb:hover {
+        background: #777; 
+    }
+    .innercontent::-webkit-scrollbar-button {
+        display: none;
+    }
+    .headofart>p {
+        position: absolute;
+        right: 35px;
+    }
+    .headofart>h2{
+        position: absolute;
+        left: 35px;
+    }
+    
+    .cardContent{
+        padding: 30px 0 30px 0;
+    }
+    .content{
+        gap: 20px;
+    }
+    .left{
+        position: absolute;
+        left: -200%;
+        transition: all 0.5s ease-in-out;
+        z-index: 5;
+        width: 370px;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        width: 29px;
+    }
+    .right{
+        width: 98vw;
+    }
+    .header{
+        width: 98vw;
+    }
+    .content{
+        width: 95vw;
+    }
+    .playbar{
+        width: 98vw;
+        flex: 1;
+    }
+    .menu{
+        display: inline;
+        z-index: 100;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    
+    .playbar{
+        flex-direction: column;
+        /* gap: px; */
+        bottom: 1vh;
+        height: 90px;
+        left: 10px;
+    }
+    .songbuttons{
+        text-align: center;
+    }
+    .songinfo{
+        text-align: center;
+    }
+    .songtime{
+        /* width: 100px; */
+        text-align: center;
+    }
+    .timeandvol{
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        width: 215px;
+    }
+}
+
+@media (max-width: 720px){
+    .playbar{
+        width: 66vh;
+        bottom: 5vh;
+        right: 0;
+    }
+}
+@media (max-width: 400px){
+    .playbar{
+        width: 90vw;
+        bottom: 5vh;
+        right: 1vw;
+    }
+}
+
